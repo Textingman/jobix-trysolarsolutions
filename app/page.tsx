@@ -1,5 +1,6 @@
 import Link from 'next/link';
-import { Bot, BookOpen, ShieldCheck, Mic } from 'lucide-react';
+import Image from 'next/image';
+import { Bot, BookOpen, ShieldCheck } from 'lucide-react';
 
 export default function HomePage() {
   return (
@@ -10,9 +11,14 @@ export default function HomePage() {
           <div className="flex justify-between items-center h-32">
             <div className="flex items-center">
               <Link href="/" className="flex-shrink-0">
-                <span className="text-2xl font-extrabold tracking-tight" style={{ color: '#1F2937' }}>
-                  Society <span style={{ color: '#F59E0B' }}>Mortgage</span>
-                </span>
+                <Image 
+                  src="/SolarSolutions.png" 
+                  alt="TrySolarSolutions" 
+                  width={500} 
+                  height={167}
+                  className="h-32 w-auto"
+                  priority
+                />
               </Link>
             </div>
             <div className="hidden md:block">
@@ -43,15 +49,15 @@ export default function HomePage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full text-sm font-semibold mb-6" style={{ backgroundColor: '#FEF3C7', color: '#F59E0B' }}>
-              <Mic className="w-4 h-4" />
-              AI Voice Powered — 100% Independent
+              <Bot className="w-4 h-4" />
+              Powered by AI — 100% Independent
             </div>
             <h1 className="text-5xl font-extrabold sm:text-6xl md:text-7xl" style={{ color: '#1F2937' }}>
-              Your Personal AI Voice Guide
-              <span className="block" style={{ color: '#F59E0B' }}>Through Your Mortgage</span>
+              Your Personal AI Agent
+              <span className="block" style={{ color: '#F59E0B' }}>for Solar Education</span>
             </h1>
             <p className="mt-6 max-w-2xl mx-auto text-xl" style={{ color: '#6B7280' }}>
-              Meet your AI mortgage advisor. Ask anything about home loans — rates, approvals, refinancing, down payments — and get honest, unbiased answers instantly. No salespeople. No pressure. Just clarity.
+              Meet your AI solar advisor. Ask anything about solar — panels, costs, incentives, installers — and get honest, unbiased answers instantly. No salespeople. No pressure. Just clarity.
             </p>
             <div className="mt-10 flex justify-center gap-4 flex-wrap">
               <Link
@@ -77,9 +83,9 @@ export default function HomePage() {
       <section className="bg-white py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold" style={{ color: '#1F2937' }}>What Our AI Voice Agent Does For You</h2>
+            <h2 className="text-4xl font-bold" style={{ color: '#1F2937' }}>What Our AI Agent Does For You</h2>
             <p className="mt-4 text-xl" style={{ color: '#6B7280' }}>
-              A knowledgeable mortgage expert available 24/7 — with zero agenda
+              A knowledgeable solar expert available 24/7 — with zero agenda
             </p>
           </div>
 
@@ -88,14 +94,14 @@ export default function HomePage() {
             <div className="bg-white p-8 rounded-xl shadow-md hover:shadow-xl transition-shadow border" style={{ borderColor: '#E5E7EB' }}>
               <div className="flex justify-center mb-4">
                 <div className="w-14 h-14 rounded-full flex items-center justify-center" style={{ backgroundColor: '#FEF3C7' }}>
-                  <Mic className="w-8 h-8" style={{ color: '#F59E0B' }} />
+                  <Bot className="w-8 h-8" style={{ color: '#F59E0B' }} />
                 </div>
               </div>
               <h3 className="text-xl font-semibold text-center mb-3" style={{ color: '#1F2937' }}>
-                Answers Your Mortgage Questions
+                Answers Your Solar Questions
               </h3>
               <p className="text-center" style={{ color: '#6B7280' }}>
-                Ask our AI anything — "What rate can I qualify for?", "How much do I need for a down payment?", "Should I go fixed or adjustable?" — and get clear, honest answers in seconds.
+                Ask our AI anything — "Is solar worth it for my home?", "What's a fair price per watt?", "Should I lease or buy?" — and get clear, honest answers in seconds.
               </p>
             </div>
 
@@ -107,10 +113,10 @@ export default function HomePage() {
                 </div>
               </div>
               <h3 className="text-xl font-semibold text-center mb-3" style={{ color: '#1F2937' }}>
-                Guides You Step by Step
+                Educates You Step by Step
               </h3>
               <p className="text-center" style={{ color: '#6B7280' }}>
-                Our AI voice agent walks you through every stage of the mortgage process — from pre-qualification to closing — so you always know exactly where you stand.
+                Our AI walks you through every aspect of going solar — from understanding your energy bill to evaluating installer quotes — so you're never in the dark.
               </p>
             </div>
 
@@ -125,7 +131,7 @@ export default function HomePage() {
                 Protects You from Bad Deals
               </h3>
               <p className="text-center" style={{ color: '#6B7280' }}>
-                Our AI flags hidden fees in loan offers, identifies unfavorable terms, and tells you exactly what questions to ask before signing anything.
+                Our AI flags red flags in solar contracts, identifies overpriced quotes, and tells you exactly what questions to ask before signing anything.
               </p>
             </div>
           </div>
@@ -136,9 +142,9 @@ export default function HomePage() {
       <section className="bg-white py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold" style={{ color: '#1F2937' }}>How the AI Voice Agent Helps You</h2>
+            <h2 className="text-4xl font-bold" style={{ color: '#1F2937' }}>How the AI Agent Helps You</h2>
             <p className="mt-4 text-xl" style={{ color: '#6B7280' }}>
-              Three simple steps to becoming a confident, informed home buyer
+              Three simple steps to becoming a confident, informed solar buyer
             </p>
           </div>
 
@@ -147,9 +153,9 @@ export default function HomePage() {
               <div className="w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6 text-2xl font-bold text-white" style={{ backgroundColor: '#F59E0B' }}>
                 1
               </div>
-              <h3 className="text-xl font-bold mb-3" style={{ color: '#1F2937' }}>Tell the AI About Your Situation</h3>
+              <h3 className="text-xl font-bold mb-3" style={{ color: '#1F2937' }}>Tell the AI About Your Home</h3>
               <p style={{ color: '#6B7280' }}>
-                Share your income, credit profile, and home-buying goals. The AI instantly tailors its guidance to your specific financial situation — no generic advice.
+                Share your location, energy usage, and goals. The AI instantly tailors its guidance to your specific situation — no generic advice.
               </p>
             </div>
 
@@ -157,9 +163,9 @@ export default function HomePage() {
               <div className="w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6 text-2xl font-bold text-white" style={{ backgroundColor: '#2F8FCB' }}>
                 2
               </div>
-              <h3 className="text-xl font-bold mb-3" style={{ color: '#1F2937' }}>Get Your Personalized Mortgage Roadmap</h3>
+              <h3 className="text-xl font-bold mb-3" style={{ color: '#1F2937' }}>Get Your Personalized Education</h3>
               <p style={{ color: '#6B7280' }}>
-                The AI explains your loan options, estimated monthly payments, interest rates, and what to expect at each stage — all in plain language you can actually understand.
+                The AI explains your solar options, estimated costs, available incentives, and what to expect — all in plain language you can actually understand.
               </p>
             </div>
 
@@ -167,9 +173,9 @@ export default function HomePage() {
               <div className="w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6 text-2xl font-bold text-white" style={{ backgroundColor: '#F59E0B' }}>
                 3
               </div>
-              <h3 className="text-xl font-bold mb-3" style={{ color: '#1F2937' }}>Close with Confidence</h3>
+              <h3 className="text-xl font-bold mb-3" style={{ color: '#1F2937' }}>Make a Confident Decision</h3>
               <p style={{ color: '#6B7280' }}>
-                Armed with unbiased knowledge, you can confidently evaluate loan offers, negotiate better terms, and choose the right mortgage for your home.
+                Armed with unbiased knowledge, you can confidently evaluate installer quotes, negotiate better deals, and choose the right solar solution for your home.
               </p>
             </div>
           </div>
@@ -180,18 +186,18 @@ export default function HomePage() {
       <section className="bg-white py-20">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h2 className="text-4xl font-bold" style={{ color: '#1F2937' }}>Ask the AI Anything About Mortgages</h2>
+            <h2 className="text-4xl font-bold" style={{ color: '#1F2937' }}>Ask the AI Anything About Solar</h2>
             <p className="mt-4 text-xl" style={{ color: '#6B7280' }}>
-              Here&apos;s a taste of what our AI voice agent can help you with
+              Here's a taste of what our AI agent can help you with
             </p>
           </div>
 
           <div className="space-y-4">
             {[
-              { q: "What mortgage rate can I qualify for?", a: "Your rate depends on your credit score, debt-to-income ratio, loan type, and current market conditions. With a 720+ credit score and stable income, you could qualify for competitive rates. Let me walk you through a personalized estimate based on your situation..." },
-              { q: "How much do I need for a down payment?", a: "It depends on the loan type. Conventional loans typically require 3–20%, FHA loans as low as 3.5%, and VA loans can be 0% for eligible veterans. I can help you figure out which option fits your budget and goals..." },
-              { q: "Should I go with a fixed or adjustable rate?", a: "A fixed rate gives you predictable payments for the life of the loan — great if you plan to stay long-term. An ARM starts lower but can adjust after a set period. Here's how to decide based on your timeline and risk tolerance..." },
-              { q: "Can you explain the closing costs on my loan estimate?", a: "Absolutely. Closing costs typically run 2–5% of the loan amount and include origination fees, appraisal, title insurance, and prepaid items. I'll break down each line item, flag anything unusual, and tell you what's negotiable before you sign..." },
+              { q: "Is solar actually worth it for my home?", a: "It depends on your energy usage, roof orientation, local utility rates, and available incentives. I can walk you through a personalized analysis based on your specific situation..." },
+              { q: "What's a fair price for a solar installation?", a: "In 2025, the average cost is $2.50–$3.50 per watt before incentives. For a typical 8kW system, that's $20,000–$28,000 before the 30% federal tax credit, bringing it to $14,000–$19,600..." },
+              { q: "Should I lease solar panels or buy them?", a: "Buying gives you full ownership, higher long-term savings, and access to tax credits. Leasing has lower upfront costs but you won't own the system or qualify for incentives. Here's how to decide..." },
+              { q: "Can you review my current solar contract?", a: "Absolutely. Share the key terms — system size, price per watt, warranty length, escalator clauses, and buyout options — and I'll flag anything unusual, explain what it means, and tell you what to negotiate before signing..." },
             ].map((item, i) => (
               <div key={i} className="rounded-xl overflow-hidden border" style={{ borderColor: '#E5E7EB' }}>
                 <div className="p-4 flex items-start gap-3" style={{ backgroundColor: '#FEF3C7' }}>
@@ -199,7 +205,7 @@ export default function HomePage() {
                   <p className="font-semibold" style={{ color: '#1F2937' }}>{item.q}</p>
                 </div>
                 <div className="p-4 flex items-start gap-3 bg-white">
-                  <Mic className="w-5 h-5 mt-0.5 flex-shrink-0" style={{ color: '#F59E0B' }} />
+                  <Bot className="w-5 h-5 mt-0.5 flex-shrink-0" style={{ color: '#F59E0B' }} />
                   <p style={{ color: '#6B7280' }}>{item.a}</p>
                 </div>
               </div>
@@ -213,12 +219,12 @@ export default function HomePage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="rounded-2xl shadow-2xl overflow-hidden" style={{ background: 'linear-gradient(135deg, #F59E0B 0%, #2F8FCB 100%)' }}>
             <div className="px-6 py-16 sm:px-12 sm:py-20 text-center">
-              <Mic className="w-16 h-16 text-white mx-auto mb-6" />
+              <Bot className="w-16 h-16 text-white mx-auto mb-6" />
               <h2 className="text-4xl font-bold text-white mb-6">
-                Your AI Mortgage Advisor is Ready
+                Your AI Solar Advisor is Ready
               </h2>
               <p className="text-xl mb-8 max-w-2xl mx-auto" style={{ color: 'rgba(255,255,255,0.9)' }}>
-                Get instant, unbiased guidance through every step of your mortgage journey. No sales calls. No pressure. Just an AI that&apos;s 100% on your side.
+                Get instant, unbiased answers to all your solar questions. No sales calls. No pressure. Just an AI that's 100% on your side.
               </p>
               <Link
                 href="/signup"
@@ -237,9 +243,9 @@ export default function HomePage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid md:grid-cols-4 gap-8">
             <div>
-              <h3 className="text-xl font-bold mb-4">Society Mortgage</h3>
+              <h3 className="text-xl font-bold mb-4">TrySolarSolutions</h3>
               <p style={{ color: '#9CA3AF' }}>
-                Your AI voice agent for unbiased mortgage guidance.
+                Your AI agent for unbiased solar education.
               </p>
             </div>
             <div>
@@ -275,12 +281,12 @@ export default function HomePage() {
             <div>
               <h4 className="font-semibold mb-4">Contact</h4>
               <p style={{ color: '#9CA3AF' }}>
-                support@trysocietymortgage.com
+                support@trysolarsolutions.com
               </p>
             </div>
           </div>
           <div className="mt-8 pt-8 text-center" style={{ borderTop: '1px solid #374151', color: '#9CA3AF' }}>
-            <p>&copy; 2026 Society Mortgage. All rights reserved.</p>
+            <p>&copy; 2025 TrySolarSolutions. All rights reserved.</p>
           </div>
         </div>
       </footer>

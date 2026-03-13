@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 
 export default function TermsPage() {
   return (
@@ -9,9 +10,13 @@ export default function TermsPage() {
           <div className="flex justify-between items-center h-32">
             <div className="flex items-center">
               <Link href="/" className="flex-shrink-0">
-                <span className="text-2xl font-extrabold tracking-tight" style={{ color: '#1F2937' }}>
-                  Society <span style={{ color: '#F59E0B' }}>Mortgage</span>
-                </span>
+                <Image 
+                  src="/SolarSolutions.png" 
+                  alt="TrySolarSolutions" 
+                  width={500} 
+                  height={167}
+                  className="h-32 w-auto"
+                />
               </Link>
             </div>
             <div className="hidden md:block">
@@ -28,7 +33,7 @@ export default function TermsPage() {
                 <Link href="/terms" className="text-[#2F3A40] hover:text-[#3B82F6] px-3 py-2 rounded-md text-sm font-medium">
                   Terms
                 </Link>
-                <Link href="/signup" className="bg-[#F59E0B] text-white hover:opacity-90 px-4 py-2 rounded-md text-sm font-medium">
+                <Link href="/signup" className="bg-[#3B82F6] text-white hover:bg-[#2563eb] px-4 py-2 rounded-md text-sm font-medium">
                   Get Started
                 </Link>
               </div>
@@ -42,7 +47,7 @@ export default function TermsPage() {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <h1 className="text-4xl font-extrabold text-[#2F3A40] mb-4">Terms of Service</h1>
           <p className="text-lg text-[#6B7280]">
-            Last Updated: March 12, 2026
+            Last Updated: December 30, 2025
           </p>
         </div>
       </section>
@@ -53,15 +58,15 @@ export default function TermsPage() {
           
           <h2 className="text-2xl font-bold text-[#2F3A40] mt-8 mb-4">1. Acceptance of Terms</h2>
           <p className="text-[#6B7280] mb-6">
-            By accessing or using Society Mortgage&apos;s AI voice mortgage guidance service (&quot;Service&quot;), you agree to be bound by these Terms of Service (&quot;Terms&quot;). If you do not agree to these Terms, you may not access or use the Service. These Terms apply to all users of the Service, including businesses, developers, and end users.
+            By accessing or using TrySolarSolutions' solar assessment and energy coaching service ("Service"), you agree to be bound by these Terms of Service ("Terms"). If you do not agree to these Terms, you may not access or use the Service. These Terms apply to all users of the Service, including businesses, developers, and end users.
           </p>
 
           <h2 className="text-2xl font-bold text-[#2F3A40] mt-8 mb-4">2. Description of Service</h2>
           <p className="text-[#6B7280] mb-6">
-            Society Mortgage provides a carrier-compliant AI voice mortgage guidance platform that allows homebuyers and homeowners to navigate the mortgage process through a secure, easy-to-use platform. The Service includes:
+            TrySolarSolutions provides a carrier-compliant solar assessment and energy coaching platform that allows homeowners to evaluate their solar potential through a secure, easy-to-use platform. The Service includes:
           </p>
           <ul className="list-disc pl-6 text-[#6B7280] mb-6 space-y-2">
-            <li>AI voice mortgage guidance and education</li>
+            <li>Solar assessment and energy coaching landing pages</li>
             <li>Phone number verification flow</li>
             <li>Parameter preservation and redirect functionality</li>
             <li>Multi-brand support with customizable styling</li>
@@ -137,7 +142,7 @@ export default function TermsPage() {
           
           <h3 className="text-xl font-semibold text-[#2F3A40] mt-6 mb-3">7.1 Our Rights</h3>
           <p className="text-[#6B7280] mb-6">
-            The Service and all content, features, and functionality are owned by Society Mortgage and are protected by copyright, trademark, and other intellectual property laws. You may not copy, modify, distribute, or create derivative works based on the Service without our express written permission.
+            The Service and all content, features, and functionality are owned by TrySolarSolutions and are protected by copyright, trademark, and other intellectual property laws. You may not copy, modify, distribute, or create derivative works based on the Service without our express written permission.
           </p>
 
           <h3 className="text-xl font-semibold text-[#2F3A40] mt-6 mb-3">7.2 Your Content</h3>
@@ -169,19 +174,19 @@ export default function TermsPage() {
 
           <h2 className="text-2xl font-bold text-[#2F3A40] mt-8 mb-4">9. Data and Privacy</h2>
           <p className="text-[#6B7280] mb-6">
-            Your use of the Service is also governed by our <Link href="/privacy" className="text-[#F59E0B] hover:opacity-80 font-medium">Privacy Policy</Link>. By using the Service, you consent to our collection and use of information as described in the Privacy Policy.
+            Your use of the Service is also governed by our <Link href="/privacy" className="text-[#3B82F6] hover:text-[#1d4ed8] font-medium">Privacy Policy</Link>. By using the Service, you consent to our collection and use of information as described in the Privacy Policy.
           </p>
 
           <h2 className="text-2xl font-bold text-[#2F3A40] mt-8 mb-4">10. Disclaimers and Limitations of Liability</h2>
           
-          <h3 className="text-xl font-semibold text-[#2F3A40] mt-6 mb-3">10.1 Service &quot;As Is&quot;</h3>
+          <h3 className="text-xl font-semibold text-[#2F3A40] mt-6 mb-3">10.1 Service "As Is"</h3>
           <p className="text-[#6B7280] mb-6">
-            THE SERVICE IS PROVIDED &quot;AS IS&quot; AND &quot;AS AVAILABLE&quot; WITHOUT WARRANTIES OF ANY KIND, EITHER EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, OR NON-INFRINGEMENT.
+            THE SERVICE IS PROVIDED "AS IS" AND "AS AVAILABLE" WITHOUT WARRANTIES OF ANY KIND, EITHER EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, OR NON-INFRINGEMENT.
           </p>
 
           <h3 className="text-xl font-semibold text-[#2F3A40] mt-6 mb-3">10.2 Limitation of Liability</h3>
           <p className="text-[#6B7280] mb-6">
-            TO THE MAXIMUM EXTENT PERMITTED BY LAW, SOCIETY MORTGAGE SHALL NOT BE LIABLE FOR ANY INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, OR PUNITIVE DAMAGES, OR ANY LOSS OF PROFITS OR REVENUES, WHETHER INCURRED DIRECTLY OR INDIRECTLY, OR ANY LOSS OF DATA, USE, GOODWILL, OR OTHER INTANGIBLE LOSSES.
+            TO THE MAXIMUM EXTENT PERMITTED BY LAW, TRYSOLARSOLUTIONS SHALL NOT BE LIABLE FOR ANY INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, OR PUNITIVE DAMAGES, OR ANY LOSS OF PROFITS OR REVENUES, WHETHER INCURRED DIRECTLY OR INDIRECTLY, OR ANY LOSS OF DATA, USE, GOODWILL, OR OTHER INTANGIBLE LOSSES.
           </p>
 
           <h3 className="text-xl font-semibold text-[#2F3A40] mt-6 mb-3">10.3 Maximum Liability</h3>
@@ -191,7 +196,7 @@ export default function TermsPage() {
 
           <h2 className="text-2xl font-bold text-[#2F3A40] mt-8 mb-4">11. Indemnification</h2>
           <p className="text-[#6B7280] mb-6">
-            You agree to indemnify, defend, and hold harmless Society Mortgage and its officers, directors, employees, and agents from any claims, liabilities, damages, losses, and expenses (including reasonable attorney fees) arising from:
+            You agree to indemnify, defend, and hold harmless TrySolarSolutions and its officers, directors, employees, and agents from any claims, liabilities, damages, losses, and expenses (including reasonable attorney fees) arising from:
           </p>
           <ul className="list-disc pl-6 text-[#6B7280] mb-6 space-y-2">
             <li>Your use of the Service</li>
@@ -243,7 +248,7 @@ export default function TermsPage() {
 
           <h3 className="text-xl font-semibold text-[#2F3A40] mt-6 mb-3">14.2 Entire Agreement</h3>
           <p className="text-[#6B7280] mb-6">
-            These Terms, together with our Privacy Policy, constitute the entire agreement between you and Society Mortgage regarding the Service and supersede all prior agreements.
+            These Terms, together with our Privacy Policy, constitute the entire agreement between you and TrySolarSolutions regarding the Service and supersede all prior agreements.
           </p>
 
           <h3 className="text-xl font-semibold text-[#2F3A40] mt-6 mb-3">14.3 Severability</h3>
@@ -263,30 +268,30 @@ export default function TermsPage() {
 
           <h2 className="text-2xl font-bold text-[#2F3A40] mt-8 mb-4">15. Changes to Terms</h2>
           <p className="text-[#6B7280] mb-6">
-            We reserve the right to modify these Terms at any time. We will notify you of material changes by posting the updated Terms on our website and updating the &quot;Last Updated&quot; date. Your continued use of the Service after changes become effective constitutes acceptance of the modified Terms.
+            We reserve the right to modify these Terms at any time. We will notify you of material changes by posting the updated Terms on our website and updating the "Last Updated" date. Your continued use of the Service after changes become effective constitutes acceptance of the modified Terms.
           </p>
 
           <h2 className="text-2xl font-bold text-[#2F3A40] mt-8 mb-4">16. Contact Information</h2>
           <p className="text-[#6B7280] mb-4">
             If you have any questions about these Terms, please contact us:
           </p>
-          <div className="bg-white rounded-lg p-6 mb-8" style={{ border: '1px solid #E5E7EB' }}>
-            <p className="text-[#6B7280] mb-2"><strong>Email:</strong> <a href="mailto:legal@trysocietymortgage.com" className="text-[#F59E0B] hover:opacity-80">legal@trysocietymortgage.com</a></p>
-            <p className="text-[#6B7280] mb-2"><strong>Support:</strong> <a href="mailto:support@trysocietymortgage.com" className="text-[#F59E0B] hover:opacity-80">support@trysocietymortgage.com</a></p>
-            <p className="text-[#6B7280]"><strong>Website:</strong> <a href="/" className="text-[#F59E0B] hover:opacity-80">https://trysocietymortgage.com</a></p>
+          <div className="bg-white rounded-lg p-6 mb-8">
+            <p className="text-[#6B7280] mb-2"><strong>Email:</strong> <a href="mailto:legal@trysolarsolutions.com" className="text-[#3B82F6] hover:text-[#1d4ed8]">legal@trysolarsolutions.com</a></p>
+            <p className="text-[#6B7280] mb-2"><strong>Support:</strong> <a href="mailto:support@trysolarsolutions.com" className="text-[#3B82F6] hover:text-[#1d4ed8]">support@trysolarsolutions.com</a></p>
+            <p className="text-[#6B7280]"><strong>Website:</strong> <a href="/" className="text-[#3B82F6] hover:text-[#1d4ed8]">https://trysolarsolutions.com</a></p>
           </div>
 
         </div>
       </section>
 
       {/* Footer */}
-      <footer className="text-white py-12 mt-20" style={{ backgroundColor: '#1F2937' }}>
+      <footer className="bg-[#2F3A40] text-white py-12 mt-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid md:grid-cols-4 gap-8">
             <div>
-              <h3 className="text-xl font-bold mb-4">Society Mortgage</h3>
+              <h3 className="text-xl font-bold mb-4">TrySolarSolutions</h3>
               <p className="text-gray-400">
-                AI voice mortgage guidance for homebuyers and homeowners.
+                Carrier-compliant solar assessment and energy coaching for homeowners.
               </p>
             </div>
             <div>
@@ -322,12 +327,12 @@ export default function TermsPage() {
             <div>
               <h4 className="font-semibold mb-4">Contact</h4>
               <p className="text-gray-400">
-                support@trysocietymortgage.com
+                support@trysolarsolutions.com
               </p>
             </div>
           </div>
           <div className="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
-            <p>&copy; 2026 Society Mortgage. All rights reserved.</p>
+            <p>&copy; 2025 TrySolarSolutions. All rights reserved.</p>
           </div>
         </div>
       </footer>
