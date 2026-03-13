@@ -13,8 +13,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "TrySolarSolutions - Your AI Agent for Solar Education",
-  description: "Meet your personal AI solar advisor. Get instant, unbiased answers to all your solar questions — panels, costs, incentives, and more. No salespeople. No pressure.",
+  title: "Society Mortgage - Your AI Voice Guide Through the Mortgage Process",
+  description: "Meet your personal AI voice mortgage advisor. Get instant, unbiased guidance through every step of your mortgage journey — rates, approvals, refinancing, and more. No pressure. Just clarity.",
 };
 
 export default function RootLayout({

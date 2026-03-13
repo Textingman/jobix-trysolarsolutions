@@ -1,7 +1,6 @@
 'use client';
 
 import Link from 'next/link';
-import Image from 'next/image';
 import { useState } from 'react';
 import { Mail, Building, Phone, User } from 'lucide-react';
 
@@ -43,13 +42,9 @@ export default function SignupPage() {
           <div className="flex justify-between items-center h-32">
             <div className="flex items-center">
               <Link href="/" className="flex-shrink-0">
-                <Image 
-                  src="/SolarSolutions.png" 
-                  alt="TrySolarSolutions" 
-                  width={500} 
-                  height={167}
-                  className="h-32 w-auto"
-                />
+                <span className="text-2xl font-extrabold tracking-tight" style={{ color: '#1F2937' }}>
+                  Society <span style={{ color: '#F59E0B' }}>Mortgage</span>
+                </span>
               </Link>
             </div>
             <div className="hidden md:block">
@@ -80,10 +75,10 @@ export default function SignupPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <h1 className="text-4xl font-extrabold mb-4" style={{ color: '#1F2937' }}>
-              Talk to Your AI Solar Advisor — Free
+              Talk to Your AI Mortgage Advisor — Free
             </h1>
             <p className="text-xl max-w-2xl mx-auto" style={{ color: '#6B7280' }}>
-              Tell us about your home and our AI agent will deliver personalized, unbiased solar education — no sales calls, no pressure, just honest answers.
+              Tell us about your home-buying goals and our AI voice agent will guide you through every step of the mortgage process — no sales calls, no pressure, just honest answers.
             </p>
           </div>
         </div>
@@ -101,7 +96,7 @@ export default function SignupPage() {
               </div>
               <h2 className="text-3xl font-bold mb-4" style={{ color: '#1F2937' }}>Request Received!</h2>
               <p className="text-lg mb-8" style={{ color: '#6B7280' }}>
-                Your submission has been received. Our team will reach out within 24 hours to begin your onboarding.
+                Your submission has been received. Our AI voice agent will reach out within 24 hours to begin your mortgage guidance session.
               </p>
               <Link
                 href="/"
@@ -114,9 +109,9 @@ export default function SignupPage() {
           ) : (
             <>
               <div className="mb-8">
-                <h2 className="text-2xl font-bold mb-2" style={{ color: '#1F2937' }}>Connect with Your AI Solar Agent</h2>
+                <h2 className="text-2xl font-bold mb-2" style={{ color: '#1F2937' }}>Connect with Your AI Mortgage Agent</h2>
                 <p style={{ color: '#6B7280' }}>
-                  Fill out this form and our AI agent will provide you with unbiased, personalized solar education — completely free. No salespeople will contact you.
+                  Fill out this form and our AI voice agent will provide you with unbiased, personalized mortgage guidance — completely free. No lenders will contact you without your permission.
                 </p>
               </div>
 
@@ -167,10 +162,10 @@ export default function SignupPage() {
                   </div>
                 </div>
 
-                {/* Company Field */}
+                {/* Location Field */}
                 <div>
                   <label htmlFor="company" className="block text-sm font-medium mb-2" style={{ color: '#1F2937' }}>
-                    Home Address / City *
+                    Home Location / City *
                   </label>
                   <div className="relative">
                     <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
@@ -215,7 +210,7 @@ export default function SignupPage() {
                 {/* Message Field */}
                 <div>
                   <label htmlFor="message" className="block text-sm font-medium mb-2" style={{ color: '#1F2937' }}>
-                    Tell Us About Your Solar Questions (Optional)
+                    Tell Us About Your Mortgage Goals (Optional)
                   </label>
                   <textarea
                     id="message"
@@ -225,7 +220,7 @@ export default function SignupPage() {
                     onChange={handleChange}
                     className="block w-full px-3 py-3 rounded-lg text-gray-900"
                     style={{ border: '1px solid #E5E7EB' }}
-                    placeholder="Tell us about your home, energy usage, or any solar questions you have..."
+                    placeholder="Tell us about your home-buying goals, current situation, or any mortgage questions you have..."
                   />
                 </div>
 
@@ -243,7 +238,7 @@ export default function SignupPage() {
                         style={{ accentColor: '#F59E0B' }}
                       />
                       <label htmlFor="sms-consent" className="ml-3 text-sm leading-relaxed">
-                        By checking this box and submitting this form, you agree to receive account notification & customer care text messages from Solar Solutions. I understand I may opt out of SMS communication by replying 'STOP'. Reply HELP or email support@trysolarsolutions.com for help. Message and Data rates may apply. Message frequency varies. Carriers are not liable for delayed or undelivered messages. Opting in to SMS is optional and not required to submit this form. All messages will be handled by Solar Solutions.
+                        By checking this box and submitting this form, you agree to receive account notification & customer care text messages from Society Mortgage. I understand I may opt out of SMS communication by replying &apos;STOP&apos;. Reply HELP or email support@trysocietymortgage.com for help. Message and Data rates may apply. Message frequency varies. Carriers are not liable for delayed or undelivered messages. Opting in to SMS is optional and not required to submit this form. All messages will be handled by Society Mortgage.
                       </label>
                     </div>
                   </div>
@@ -260,7 +255,7 @@ export default function SignupPage() {
                       <label htmlFor="terms-consent" className="ml-3 text-sm leading-relaxed" style={{ color: '#1F2937' }}>
                         I agree with the{' '}
                         <Link href="/terms" className="font-medium underline" style={{ color: '#2F8FCB' }}>
-                          Terms & Conditions
+                          Terms &amp; Conditions
                         </Link>{' '}
                         and{' '}
                         <Link href="/privacy" className="font-medium underline" style={{ color: '#2F8FCB' }}>
@@ -302,9 +297,9 @@ export default function SignupPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid md:grid-cols-4 gap-8">
             <div>
-              <h3 className="text-xl font-bold mb-4">TrySolarSolutions</h3>
+              <h3 className="text-xl font-bold mb-4">Society Mortgage</h3>
               <p style={{ color: '#9CA3AF' }}>
-                Unbiased AI-powered solar education for homeowners.
+                Unbiased AI voice mortgage guidance for homebuyers.
               </p>
             </div>
             <div>
@@ -340,12 +335,12 @@ export default function SignupPage() {
             <div>
               <h4 className="font-semibold mb-4">Contact</h4>
               <p style={{ color: '#9CA3AF' }}>
-                support@trysolarsolutions.com
+                support@trysocietymortgage.com
               </p>
             </div>
           </div>
           <div className="mt-8 pt-8 text-center" style={{ borderTop: '1px solid #374151', color: '#9CA3AF' }}>
-            <p>&copy; 2025 TrySolarSolutions. All rights reserved.</p>
+            <p>&copy; 2026 Society Mortgage. All rights reserved.</p>
           </div>
         </div>
       </footer>

@@ -2,7 +2,6 @@
 
 import { useSearchParams, useRouter } from 'next/navigation';
 import { useState, useEffect, Suspense } from 'react';
-import Image from 'next/image';
 import { CheckCircle } from 'lucide-react';
 
 function VerifyPageContent() {
@@ -24,7 +23,7 @@ function VerifyPageContent() {
     setPhone(phoneParam);
   }, [searchParams]);
 
-  // Mask resume to show only last 4 digits
+  // Mask phone to show only last 4 digits
   const maskPhone = (phoneNumber: string): string => {
     if (!phoneNumber) return '';
     
@@ -69,19 +68,15 @@ function VerifyPageContent() {
       <div className="max-w-md w-full bg-white rounded-2xl shadow-xl p-8">
         {/* Logo/Brand */}
         <div className="flex justify-center mb-8">
-          <Image 
-            src="/SolarSolutions.png" 
-            alt="TrySolarSolutions" 
-            width={320} 
-            height={107}
-            className="h-32 w-auto"
-          />
+          <span className="text-2xl font-extrabold tracking-tight" style={{ color: '#1F2937' }}>
+            Society <span style={{ color: '#F59E0B' }}>Mortgage</span>
+          </span>
         </div>
 
         {/* Verification Content */}
         <div className="text-center mb-8">
-          <div className="w-20 h-20 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-6">
-            <CheckCircle className="w-12 h-12 text-[#3B82F6]" />
+          <div className="w-20 h-20 bg-amber-100 rounded-full flex items-center justify-center mx-auto mb-6">
+            <CheckCircle className="w-12 h-12 text-[#F59E0B]" />
           </div>
           
           <h2 className="text-2xl font-bold text-gray-900 mb-4">
@@ -94,8 +89,8 @@ function VerifyPageContent() {
               type="tel"
               value={phone}
               onChange={(e) => setPhone(e.target.value)}
-              placeholder="Enter resume"
-              className="w-full bg-white rounded-lg p-6 text-3xl font-bold text-gray-900 tracking-wider text-center border-2 border-gray-200 focus:border-[#2563eb] focus:outline-none transition-colors"
+              placeholder="Enter phone number"
+              className="w-full bg-white rounded-lg p-6 text-3xl font-bold text-gray-900 tracking-wider text-center border-2 border-gray-200 focus:border-[#F59E0B] focus:outline-none transition-colors"
             />
           </div>
 
@@ -106,7 +101,7 @@ function VerifyPageContent() {
             className={`w-full py-4 px-6 rounded-lg text-lg font-semibold transition-all ${
               isRedirecting
                 ? 'bg-gray-400 cursor-not-allowed'
-                : 'bg-[#3B82F6] hover:bg-[#2563eb] text-white shadow-lg hover:shadow-xl'
+                : 'bg-[#F59E0B] hover:opacity-90 text-white shadow-lg hover:shadow-xl'
             }`}
           >
             {isRedirecting ? (
@@ -126,7 +121,7 @@ function VerifyPageContent() {
         {/* Footer */}
         <div className="text-center pt-6 border-t border-gray-200">
           <p className="text-xs text-gray-500">
-            Secured by TrySolarSolutions
+            Secured by Society Mortgage
           </p>
         </div>
       </div>
@@ -139,7 +134,7 @@ export default function VerifyPage() {
     <Suspense fallback={
       <div className="min-h-screen bg-white flex items-center justify-center">
         <div className="text-center">
-          <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-[#2563eb] mx-auto"></div>
+          <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-[#F59E0B] mx-auto"></div>
           <p className="mt-4 text-gray-600">Loading...</p>
         </div>
       </div>
