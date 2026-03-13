@@ -283,6 +283,11 @@ export default function HomePage() {
               <p style={{ color: '#9CA3AF' }}>
                 support@trysolarsolutions.com
               </p>
+              <p className="mt-2" style={{ color: '#9CA3AF' }}>
+                1166 E Warner Rd<br />
+                Gilbert, AZ 85296<br />
+                United States
+              </p>
             </div>
           </div>
           <div className="mt-8 pt-8 text-center" style={{ borderTop: '1px solid #374151', color: '#9CA3AF' }}>
